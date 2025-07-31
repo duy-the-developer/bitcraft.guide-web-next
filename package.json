@@ -33,6 +33,8 @@
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.53.0",
     "@tanstack/react-virtual": "^3.13.12",
     "@vercel/analytics": "^1.5.0",
     "@xyflow/react": "^12.8.1",
