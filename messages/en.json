@@ -124,5 +124,14 @@
   "toast": {
     "quantityAdjusted": "Quantity adjusted to minimum of {minQuantity}. This recipe produces {minQuantity} items per craft.",
     "quantityAdjustedDescription": "You cannot craft less than what one recipe execution produces."
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "personal": "Personal",
+    "settlement": "Settlement",
+    "accountSettings": "Account settings",
+    "appPreferences": "App preferences",
+    "projects": "Projects"
   }
 }

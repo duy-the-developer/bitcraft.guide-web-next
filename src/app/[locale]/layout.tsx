@@ -1,4 +1,5 @@
 import { AppSidebar } from '@/components/app-sidebar'
+import { AuthProvider } from '@/components/auth-provider'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -77,16 +78,18 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
-            <SidebarProvider>
-              <AppSidebar searchData={searchData} />
-              <SidebarInset className="flex min-h-screen flex-col">
-                <Header />
-                <main className="flex-1">{children}</main>
-                <Footer />
-              </SidebarInset>
-            </SidebarProvider>
-            <Analytics />
-            <Toaster />
+            <AuthProvider>
+              <SidebarProvider>
+                <AppSidebar searchData={searchData} />
+                <SidebarInset className="flex min-h-screen flex-col">
+                  <Header />
+                  <main className="flex-1">{children}</main>
+                  <Footer />
+                </SidebarInset>
+              </SidebarProvider>
+              <Analytics />
+              <Toaster />
+            </AuthProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

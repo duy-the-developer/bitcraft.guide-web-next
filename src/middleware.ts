@@ -1,8 +1,7 @@
 import createMiddleware from 'next-intl/middleware'
 import { type NextRequest } from 'next/server'
-import { I18N_CONFIG } from './i18n/config'
 import { routing } from './i18n/routing'
-import { updateSession } from './utils/supabase/middleware'
+import { updateSession } from './lib/supabase/middleware'
 
 const handleI18nRouting = createMiddleware(routing)
 
@@ -17,5 +16,5 @@ export const config = {
   // Only run middleware on:
   // - Root path (/) for locale detection and redirection
   // - All localized paths (dynamically generated from i18n config)
-  matcher: ['/', `/(${I18N_CONFIG.locales.join('|')})/:path*`]
+  matcher: ['/', '/(en|fr|es)/:path*']
 }

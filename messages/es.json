@@ -124,5 +124,14 @@
   "toast": {
     "quantityAdjusted": "Cantidad ajustada al mínimo de {minQuantity}. Esta receta produce {minQuantity} objetos por fabricación.",
     "quantityAdjustedDescription": "No puedes fabricar menos de lo que produce una ejecución de receta."
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "personal": "Personal",
+    "settlement": "Asentamiento",
+    "accountSettings": "Configuración de cuenta",
+    "appPreferences": "Preferencias de la aplicación",
+    "projects": "Proyectos"
   }
 }

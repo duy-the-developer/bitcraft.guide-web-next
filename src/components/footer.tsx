@@ -6,7 +6,7 @@ export function Footer() {
   const t = useTranslations()
 
   return (
-    <footer className="bg-background border-t py-4">
+    <footer className="bg-background border-t py-6">
       <Container>
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex flex-col items-center gap-4 md:flex-row md:gap-6">

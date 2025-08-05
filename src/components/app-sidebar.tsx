@@ -27,7 +27,8 @@ import { SITE_CONFIG } from '@/config/site-config'
 import type { SearchData } from '@/lib/spacetime-db-new/shared/dtos/search-dtos'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
-import { KofiWidget } from './kofi-widget'
+import { AuthSection } from './auth-section'
+// import { KofiWidget } from './kofi-widget'
 import { Logo } from './logo'
 
 // Type definitions for navigation items
@@ -253,9 +254,9 @@ export function AppSidebar({ searchData, ...props }: AppSidebarProps) {
         ))}
       </SidebarContent>
 
-      {/* Ko-fi Widget */}
+      {/* Authentication Section */}
       <div className="border-t p-4">
-        <KofiWidget className="w-full" />
+        <AuthSection />
       </div>
 
       <SidebarRail />
