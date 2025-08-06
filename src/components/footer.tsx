@@ -1,6 +1,7 @@
 import { Container } from '@/components/container'
 import { SITE_CONFIG } from '@/config/site-config'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 export function Footer() {
   const t = useTranslations()
@@ -14,6 +15,19 @@ export function Footer() {
               © 2025 Duy Nguyen. {t('footer.allRightsReserved')}
             </p>
             <div className="flex items-center gap-4">
+              <Link
+                href="/privacy"
+                className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+              >
+                Terms of Service
+              </Link>
+              <span className="text-muted-foreground">•</span>
               <a
                 href={SITE_CONFIG.links.discord}
                 target="_blank"
